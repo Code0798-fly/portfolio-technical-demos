@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cart Upsell Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Self-initiated technical demonstration</p>
+      <h1>Cart Upsell Experience</h1>
+      <p class="intro">A lightweight storefront interaction demonstrating cart state, progress-to-threshold messaging, and a contextual product recommendation.</p>
+      <section class="card" aria-labelledby="cart-title">
+        <div class="heading"><h2 id="cart-title">Your cart</h2><span id="count">0 items</span></div>
+        <div id="items" class="items" aria-live="polite"></div>
+        <div class="threshold"><div class="bar"><span id="progress"></span></div><p id="threshold-copy"></p></div>
+        <div id="upsell" class="upsell" hidden>
+          <div><strong>Complete the set</strong><p>Travel pouch — ₹499</p></div>
+          <button id="upsell-button" type="button">Add</button>
+        </div>
+        <div class="total"><span>Total</span><strong id="total">₹0</strong></div>
+      </section>
+      <section class="products" aria-label="Products">
+        <button class="product" data-name="Everyday Serum" data-price="1199"><span>Everyday Serum</span><small>₹1,199</small><b>Add to cart</b></button>
+        <button class="product" data-name="Barrier Cream" data-price="899"><span>Barrier Cream</span><small>₹899</small><b>Add to cart</b></button>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
